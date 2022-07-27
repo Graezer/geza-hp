@@ -23,6 +23,6 @@ In the end make sure to:
 
  - check if the correct branch is deployed. to do so: 
  github repo -> settings -> pages 
-  and set at "Source" the branch to "gh-pages" and the "root" folder.
+  and set at "Source" the branch to "gh-pages" and the folder to "root".
 
-
+  Thanks for reading.
