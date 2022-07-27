@@ -7,15 +7,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Floating Head of Geza welcomes you to his Homepage!
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.schauspielervideos.de/fullprofile/schauspieler-geza-willem-artus-steinert.html"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          I am an Actor!
         </a>
       </header>
     </div>
