@@ -1,5 +1,8 @@
-import './App.css';
-import { Route } from 'react-router-dom';
+import './App.scss';
+import "./components/navbar.scss";
+
+import { Route, Routes } from 'react-router-dom';
+
 
 import NavBar from './components/NavBar.js'
 import Home from './Home.js'
@@ -12,11 +15,12 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Home/>
-      {/* <Route exact path="/" component={Home}/> 
-      <Route exact path="/Coding" component={Coding}/> 
-      <Route exact path="/Contact" component={Contact}/> 
-      <Route exact path="/Art" component={Art}/>  */}
+      <Routes>
+        <Route path="/" element={<Home/>}/> 
+        <Route path="/Coding" element={<Coding/>}/> 
+        <Route path="/Contact" element={<Contact/>}/> 
+        <Route path="/Art" element={<Art/>}/> 
+      </Routes>
     </div>
   );
 }

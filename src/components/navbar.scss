@@ -1,0 +1,22 @@
+@import "../App.scss";
+
+.navbar {
+  background-color: $primary-color;
+  height: 10vh;
+}
+
+.navbar-link {
+  transition: 300ms;
+}
+
+.navbar-dropdown {
+  transition: 300ms;
+}
+
+nav {
+
+  img {
+    width: 50px;
+    margin: 0px 20px;
+  }
+}

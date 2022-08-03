@@ -1,12 +1,13 @@
 import React from 'react'
-import logo from './logo.svg';
+import logo from './logo.svg'
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
     <div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>My floating head welcomes you..</p>
+        <p>floaty head welcomes you..</p>
         <a
           className="App-link"
           href="https://github.com/Graezer"
@@ -15,6 +16,7 @@ function Home() {
         >
           I am a coder!
         </a>
+        <Link className="navbar-item button is-info" to="/coding">Coding</Link> 
         <h3>and</h3>
         <a
           className="App-link"
@@ -24,6 +26,7 @@ function Home() {
         >
           I am an actor!
         </a>
+        <Link className="navbar-item button is-info" to="/acting">Acting</Link> 
         <p>choose a path you want to continue on..</p>
       </header>
     </div>

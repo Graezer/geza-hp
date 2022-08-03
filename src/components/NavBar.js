@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../logo.svg'
+import './navbar.scss'
 
 function NavBar() {
   return (
@@ -16,25 +18,22 @@ function NavBar() {
 
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start">
-            <a className="navbar-item">
-              Home
-            </a>
-
+            <Link className="navbar" to="/"><img src={logo} alt="logo" /></Link>
+            
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">
                 More
               </a>
 
               <div className="navbar-dropdown">
-                <Link className="navbar-item" to="/art">Art</Link> 
+                <Link className="navbar-item" to="/coding">Coding</Link> 
                 <Link className="navbar-item" to="/actor">Actor</Link> 
+                <Link className="navbar-item" to="/art">Art</Link>
                 <Link className="navbar-item" to="/contact">Contact</Link> 
                 <hr className="navbar-divider" />
               </div>
             </div>
           </div>
-
-          
         </div>
       </nav>
 
