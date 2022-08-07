@@ -4,8 +4,9 @@ import './App.scss';
 
 function Coding() {
   return (
-    <div className="App">
+    <div>
       <h1>Coding Journey</h1>
+      <a target='_blank' href='https://www.linkedin.com/in/coder-geza-steinert/'>linked-in</a>
 
       <div>
       <i class="fas fa-user" />
