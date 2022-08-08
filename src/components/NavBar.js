@@ -4,11 +4,12 @@ import logo from '../logo.svg'
 import './navbar.scss'
 
 function NavBar() {
+  
   return (
     <div>
       <nav className="navbar" role="navigation" aria-label="main navigation">
+        
         <div className="navbar-brand">
-
           <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -29,8 +30,7 @@ function NavBar() {
                 <Link className="navbar-item" to="/coding">Coding</Link> 
                 <Link className="navbar-item" to="/actor">Actor</Link> 
                 <Link className="navbar-item" to="/art">Art</Link>
-                <Link className="navbar-item" to="/contact">Contact</Link> 
-                <hr className="navbar-divider" />
+                <Link className="navbar-item" to="/contact">Contact</Link>
               </div>
             </div>
           </div>

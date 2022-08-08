@@ -1,36 +1,51 @@
 @import "~bulma/bulma";
 
+$color-primary: #282c34;
+$color-secondary: #808ba1;
+$color-contrast: #f8f8f8;
 
-$primary-color: #282c34;
+$fontsize-h1: calc(20px + 5vw) ;
+$fontsize-h2: 2rem ;
+$fontsize-h3: 1.5rem ;
+$fontsize-p: 1rem ;
+
+h1 {
+  font-size: $fontsize-h1;
+}
+
+h2 {
+  font-size: $fontsize-h2;
+}
+
+h3 {
+  font-size: $fontsize-h3;
+}
+
+p {
+  font-size: $fontsize-p;
+}
 
 .App {
-  text-align: center;
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: $primary-color;
+.form-container {
+  background-color: $color-secondary;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: $color-contrast;
 }
 
-p {
-  font-size: calc(5px + 1vpm);
+.banner {
+  font-family: 'Franklin Gothic Medium';
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
 }
 
 .App-link {
@@ -41,6 +56,20 @@ p {
   &:hover {
     color: #234047;
     transition: 0.5s;
+  }
+}
+
+
+// LOGO 
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
 }
 

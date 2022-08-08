@@ -1,15 +1,29 @@
 import React from 'react'
 import './App.scss';
+import Random from './projects/RandomColor'
+import BillionBirthday from './projects/BillionBirthday';
 
 
 function Coding() {
   return (
-    <div>
-      <h1>Coding Journey</h1>
-      <a target='_blank' href='https://www.linkedin.com/in/coder-geza-steinert/'>linked-in</a>
+    <div className='form-container'>
+      
+      <div className='banner'>
+        <div>
+          <h1>Geza</h1>
+          <h1><i class="fas fa-user" /> Graezer</h1>
+        </div>
+        <div>
+          <a className="App-link m-1" target='_blank' href='https://www.linkedin.com/in/coder-geza-steinert/'>
+            linked-in
+          </a>
+          <a className="App-link m-1" href="https://github.com/Graezer" target="_blank" rel="noopener noreferrer">
+            Github
+          </a>
+        </div>
+      </div>
 
       <div>
-      <i class="fas fa-user" />
         <h3>Installed Packages</h3>
         <ul>
           <li>npm create-react-app</li>

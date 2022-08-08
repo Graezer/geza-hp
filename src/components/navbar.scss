@@ -1,7 +1,9 @@
-@import "../App.scss";
+@import "./component_index.scss";
 
 .navbar {
-  background-color: $primary-color;
+  display: flex;
+  background-color: $color-primary;
+  align-items: center;
   height: 10vh;
 }
 
@@ -14,7 +16,6 @@
 }
 
 nav {
-
   img {
     width: 50px;
     margin: 0px 20px;
