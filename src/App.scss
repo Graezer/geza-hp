@@ -26,12 +26,15 @@ p,a {
   font-size: $fontsize-p;
 }
 
+
+
 .App {
   text-align: left;
 }
 
 .form-container {
   background-color: $color-secondary;
+  margin-top: 10vh;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -40,16 +43,29 @@ p,a {
 
 .banner {
   font-family: 'Franklin Gothic Medium';
-  margin: 3vw 3vh;
+  margin: 3vh 4vw;
 }
 
 .content {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: rgba($color: $color-primary, $alpha: 1.0);
+  
   border-radius: 8px;
-  margin: 3vh 3vw;
+  margin: 3vh 8vw 3vh; //top right bottom left; top right&left bottom; y x
+}
+
+@media only screen and (max-width: 1024px) {
+  .form-container {
+    background-color: rgb(197, 165, 23);
+  }
+  
+  .content {
+    flex-direction: column;
+    margin: 2vh 4vw;
+    justify-content: center;
+    background-color: rgba($color: $color-primary, $alpha: 1.0);
+  }
+
 }
 
 .App-link {

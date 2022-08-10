@@ -9,7 +9,7 @@ function NavBar() {
 
   return (
     <div>
-      <nav className="navbar" role="navigation" aria-label="main navigation">
+      <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <Link className="" to="/"><img src={logo} alt="logo" /></Link>
         <div className="navbar-brand">
           <a

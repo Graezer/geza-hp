@@ -10,8 +10,7 @@ function Coding() {
       
       <div className='banner'>
         <div>
-          <h1>Geza</h1>
-          <h1><i class="fas fa-user" /> Graezer</h1>
+          <h1>Graezer</h1>
         </div>
         <div>
           <a className="App-link m-1" target='_blank' href='https://www.linkedin.com/in/coder-geza-steinert/'>
@@ -23,12 +22,13 @@ function Coding() {
         </div>
       </div>
 
-      <div>
+      <div className='content'>
         <h3>Installed Packages</h3>
         <ul>
           <li>npm create-react-app</li>
           <li>npm install node-sass</li>
           <li>npm install bulma</li>
+          <li>npm i moment</li>
           <li>npm i --save @fortawesome/fontawesome-svg-core</li>
           <li>npm install --save @fortawesome/free-solid-svg-icons</li>
           <li>npm i --save @fortawesome/free-regular-svg-icons</li>
@@ -37,15 +37,20 @@ function Coding() {
         </ul>
       </div>
       <br/>
-      <div>
+
+      <div className='content'>
         <h3>Tutorials</h3>
         <ul>
-          <li><a target='_blank' href='https://www.youtube.com/watch?v=2hM5viLMJpA' >host free react-app</a></li>
-          <li><a target='_blank' href='https://www.youtube.com/watch?v=xMNhDf5-hvk'>create multi page app</a> -beware the comments</li>
-          <li><a target='_blank' href='https://www.youtube.com/watch?v=2zXEMMEQLIw' >add fontawesome</a></li>
-          <li><a target='_blank' href='https://www.youtube.com/watch?v=I2UBjN5ER4s&t=4098s'>responsive website tutorial</a></li>
+          <li><a className='App-link' target='_blank' href='https://www.youtube.com/watch?v=2hM5viLMJpA' >host free react-app</a></li>
+          <li><a className='App-link' target='_blank' href='https://www.youtube.com/watch?v=xMNhDf5-hvk'>create multi page app</a> - beware the comments</li>
+          <li><a className='App-link' target='_blank' href='https://www.youtube.com/watch?v=2zXEMMEQLIw' >add fontawesome</a></li>
+          <li><a className='App-link' target='_blank' href='https://www.youtube.com/watch?v=I2UBjN5ER4s&t=4098s'>responsive website tutorial</a></li>
           <li></li>
         </ul>
+      </div>
+
+      <div className='content mb-5'>
+        <BillionBirthday />
       </div>
     </div>
   )

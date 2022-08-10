@@ -20,28 +20,22 @@ function Home() {
       </div>
 
       <div className='content'>
-        <div className='coding'>
-          <Link className="m-2 App-link" to="/coding">see coding projects etc.</Link> 
+        <div>
+          <p className='m-3'>continue to..</p>
+        </div>
+
+        <div className='coding is-flex is-align-items-center'>
+          <Link className="m-3 App-link" to="/coding">CODING</Link> 
         </div>
 
         <div>
-          <p className='m-5'>OR</p>
+          <p className='m-3'>or</p>
         </div>
 
         <div className='acting is-flex is-align-items-center'>
-          <Link className="m-2 App-link" to="/acting">
-            have a look at my acting career
+          <Link className="m-3 App-link" to="/acting">
+            ACTING
           </Link> 
-            <div>
-              <p className='m-5'>OR</p>
-            </div>
-          <div className=''>
-            <a className="App-link m-3"
-              href="https://www.schauspielervideos.de/fullprofile/schauspieler-geza-willem-artus-steinert.html"
-              rel="noopener noreferrer">
-              my Portfolio
-            </a>
-          </div>
         </div>
       </div>
 
