@@ -4,13 +4,14 @@ $color-primary: #282c34;
 $color-secondary: #808ba1;
 $color-contrast: #f8f8f8;
 
-$fontsize-h1: calc(20px + 5vw) ;
-$fontsize-h2: 2rem ;
-$fontsize-h3: 1.5rem ;
+$fontsize-h1: calc(2rem + 4vw) ;
+$fontsize-h2: calc(1.5rem + 2vw) ;
+$fontsize-h3: 1.3rem ;
 $fontsize-p: 1rem ;
 
 h1 {
   font-size: $fontsize-h1;
+  line-height: 1.1;
 }
 
 h2 {
@@ -21,7 +22,7 @@ h3 {
   font-size: $fontsize-h3;
 }
 
-p {
+p,a {
   font-size: $fontsize-p;
 }
 
@@ -34,18 +35,21 @@ p {
   min-height: 90vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   color: $color-contrast;
 }
 
 .banner {
   font-family: 'Franklin Gothic Medium';
-  margin: auto;
+  margin: 3vw 3vh;
 }
 
 .content {
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: rgba($color: $color-primary, $alpha: 1.0);
+  border-radius: 8px;
+  margin: 3vh 3vw;
 }
 
 .App-link {
@@ -63,7 +67,7 @@ p {
 // LOGO 
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 

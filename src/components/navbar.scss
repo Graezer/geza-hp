@@ -7,12 +7,28 @@
   height: 10vh;
 }
 
-.navbar-link {
+.navbar-item {
   transition: 300ms;
+  border-radius: 4px;
+  
+  &:hover {
+    background-color: black;
+    transition: 300ms;
+
+  }
 }
 
 .navbar-dropdown {
   transition: 300ms;
+}
+
+.navbar-menu {
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.navbar-start {
+  display: flex;
 }
 
 nav {
