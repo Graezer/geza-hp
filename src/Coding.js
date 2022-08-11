@@ -34,6 +34,7 @@ function Coding() {
           <li>npm i --save @fortawesome/free-regular-svg-icons</li>
           <li>npm i --save @fortawesome/react-fontawesome@latest</li>
           <li></li>
+          <li>npm run deploy</li>
         </ul>
       </div>
       <br/>
