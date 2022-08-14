@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/geza-hp/static/css/main.272168bd.css",
-    "main.js": "/geza-hp/static/js/main.cd552399.js",
+    "main.css": "/geza-hp/static/css/main.ea36c3e0.css",
+    "main.js": "/geza-hp/static/js/main.b4e0905a.js",
     "static/js/787.7857f389.chunk.js": "/geza-hp/static/js/787.7857f389.chunk.js",
     "static/media/logo.svg": "/geza-hp/static/media/logo.2ed8872afe144349d85414aa734c9ce3.svg",
     "index.html": "/geza-hp/index.html",
-    "main.272168bd.css.map": "/geza-hp/static/css/main.272168bd.css.map",
-    "main.cd552399.js.map": "/geza-hp/static/js/main.cd552399.js.map",
+    "main.ea36c3e0.css.map": "/geza-hp/static/css/main.ea36c3e0.css.map",
+    "main.b4e0905a.js.map": "/geza-hp/static/js/main.b4e0905a.js.map",
     "787.7857f389.chunk.js.map": "/geza-hp/static/js/787.7857f389.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.272168bd.css",
-    "static/js/main.cd552399.js"
+    "static/css/main.ea36c3e0.css",
+    "static/js/main.b4e0905a.js"
   ]
 }
