@@ -30,7 +30,7 @@ function NavBar() {
         </div>
         <div id="navbarBasicExample" className={`navbar-menu ${isActive ? "is-active" : ""}`}>
           <div className="navbar-start">
-            <Link className="navbar-item" to="/coding">Coding</Link> 
+            <Link className="navbar-item" to="/coder">Coder</Link> 
             <Link className="navbar-item" to="/actor">Actor</Link> 
             <Link className="navbar-item" to="/art">Art</Link>
             <Link className="navbar-item" to="/">Home</Link> 

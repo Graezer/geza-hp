@@ -4,8 +4,9 @@ import { Route, Routes } from 'react-router-dom'
 
 import NavBar from './components/NavBar.js'
 import Home from './Home.js'
-import Coding from './Coding.js'
+import Coder from './Coder.js'
 import Art from './Art.js'
+import Actor from './Actor'
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home/>}/> 
-        <Route path="/Coding" element={<Coding/>}/> 
+        <Route path="/Coder" element={<Coder/>}/>
+        <Route path="/Actor" element={<Actor/>}/>
         <Route path="/Art" element={<Art/>}/> 
       </Routes>
     </div>
