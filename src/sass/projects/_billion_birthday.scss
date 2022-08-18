@@ -1,0 +1,22 @@
+.date-form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .input {
+    max-width: 5rem;
+    min-width: 4rem;
+    margin: .3rem;
+
+  }
+
+  button {
+    max-width: 6rem;
+    min-width: 4rem;
+    margin: .3rem;
+  }
+
+  .date-outcome {
+    transition: 300ms;
+  }
+}

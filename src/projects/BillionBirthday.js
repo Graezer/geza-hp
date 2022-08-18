@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import moment from 'moment'
-import './billion_birthday.scss'
+import '../sass/App.scss'
 
 function BillionBirthday() {
 
@@ -31,29 +31,32 @@ function BillionBirthday() {
   }
 
   function calculateFromNow (y,m,d){
-    return (moment(`${y}${m}${d}`,'YYYYMMDD').fromNow())
+    return (moment(`${y}${m}${d}`,'YYYYMMDD').add(10**9, 'seconds').fromNow())
   }
 
   function calcFromNow(){
     return calculateFromNow(date.year, date.month, date.day)
   }
 
-
   return (
     <div className=''>
-      <label>Calculate your Billionth Second Birthday </label>
-      <form className='content' onSubmit={handleSubmit}>
-
-        <input type="text" onChange={(e) => setYear(e.target.value)} className='date-input is-info' placeholder='Year YYYY' pattern='[0-9]*' value={year}  />
-        <input type="text" onChange={(e) => setMonth(e.target.value)} className='date-input is-info' placeholder='Month MM' pattern='[0-9]*' value={month} />
-        <input type="text" onChange={(e) => setDay(e.target.value)} className='date-input is-info' placeholder='Day DD' pattern='[0-9]*' value={day} />
-        <input type="text" onChange={(e) => setHour(e.target.value)} className='date-input is-info' placeholder='Hour HH' pattern='[0-9]*' value={hour}/>
-        <input type="text" onChange={(e) => setMinute(e.target.value)} className='date-input is-info' placeholder='Minute HH' pattern='[0-9]*' value={minute}/>
-        {/* <button type="submit" className='button is-dark'>Go</button>  */}
+      <label className='m-2'>Calculate your Billionth Second Birthday </label>
+      <form className='date-form' onSubmit={handleSubmit}>
+        <input type="text" onChange={(e) => setYear(e.target.value)} className='input is-info' placeholder='Year YYYY' pattern='[0-9]*' value={year}  />
+        <input type="text" onChange={(e) => setMonth(e.target.value)} className='input is-info' placeholder='Month MM' pattern='[0-9]*' value={month} />
+        <input type="text" onChange={(e) => setDay(e.target.value)} className='input is-info' placeholder='Day DD' pattern='[0-9]*' value={day} />
+        <input type="text" onChange={(e) => setHour(e.target.value)} className='input is-info' placeholder='Hour HH' pattern='[0-9]*' value={hour}/>
+        <input type="text" onChange={(e) => setMinute(e.target.value)} className='input is-info' placeholder='Minute HH' pattern='[0-9]*' value={minute}/>
+        <button type="submit" className='button is-dark'>Clear</button> 
       </form>
-        <h3> You {(calc() <= moment().format('YYYYMMDD') ? 'turned' : 'turn')} one billion seconds on {(calc() === 'Invalid date' ? '___' : calc())}</h3>
-        <h3> That is {(calcFromNow() === 'Invalid date' ? '___' : calcFromNow())}</h3>
-      <p>Date calculated with<a className='App-link m-3' href="https://momentjs.com/" target="_blank" rel="noreferrer">Moment.js</a></p>
+        {(calc() === 'Invalid date' ? '' : (
+          <div className='date-outcome'>
+            <h3> You {(calcFromNow().match(/ago/) ? 'turned' : 'turn')} one billion seconds on {calc()}</h3>
+            <h3> That {(calcFromNow().match(/ago/) ? 'was' : 'is')} {calcFromNow()}</h3>
+          </div>
+        ))}
+        
+      <p><a className='App-link m-3' href="https://momentjs.com/" target="_blank" rel="noreferrer">Moment.js</a></p>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../logo.svg'
-import './navbar.scss'
+import logo from '../images/logo.svg'
+import '../sass/App.scss'
 
 function NavBar() {
 
@@ -10,7 +10,7 @@ function NavBar() {
   return (
     <div>
       <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-        <Link className="" to="/"><img src={logo} alt="logo" /></Link>
+        <Link className="App-logo" to="/"><img src={logo} alt="logo" /></Link>
         <div className="navbar-brand">
           <a
             onClick={() => {
@@ -33,7 +33,6 @@ function NavBar() {
             <Link className="navbar-item" to="/coding">Coding</Link> 
             <Link className="navbar-item" to="/actor">Actor</Link> 
             <Link className="navbar-item" to="/art">Art</Link>
-            <Link className="navbar-item" to="/contact">Contact</Link>
             <Link className="navbar-item" to="/">Home</Link> 
           </div>
         </div>

@@ -1,0 +1,44 @@
+@import "~bulma/bulma";
+
+@import './abstracts';
+@import './components';
+@import './layouts';
+@import './projects';
+@import './utilities';
+
+
+html {
+  background-color: $color-primary;
+}
+
+// .App {
+//   text-align: left;
+// }
+
+.App-link {
+  text-decoration: none;
+  transition: 0.5s;
+  
+  &:hover {
+    color: $color-contrast;
+    transition: 0.5s;
+  }
+}
+
+
+// LOGO 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    animation-delay: 5s;
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

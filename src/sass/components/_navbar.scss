@@ -1,10 +1,8 @@
-@import "./component_index.scss";
-
 .navbar {
   display: flex;
-  background-color: $color-primary;
   align-items: center;
   height: 10vh;
+  background: linear-gradient($color-dark, $color-primary);
 }
 
 .navbar-item {
@@ -14,7 +12,7 @@
   &:hover {
     background-color: black;
     transition: 300ms;
-
+    
   }
 }
 
@@ -25,6 +23,8 @@
 .navbar-menu {
   padding: 8px;
   border-radius: 4px;
+  // background: linear-gradient($color-secondary, $color-primary );
+  max-width: min-content;
 }
 
 .navbar-start {

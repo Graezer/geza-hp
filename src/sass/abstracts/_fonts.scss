@@ -1,0 +1,36 @@
+$fontsize-h1: calc(2rem + 4vw) ;
+$fontsize-h2: calc(1.5rem + 2vw) ;
+$fontsize-h3: 1.3rem ;
+$fontsize-p: 1rem ;
+
+body {
+  color: $color-white;
+}
+
+h1,
+.h1 {
+  font-size: $fontsize-h1;
+  line-height: 1.1;
+}
+
+h2,
+.h2 {
+  font-size: $fontsize-h2;
+}
+
+h3,
+.h3 {
+  font-size: $fontsize-h3;
+  color: $color-white;
+}
+
+p,
+.p {
+  font-size: $fontsize-p;
+}
+
+a,
+.a {
+  font-size: $fontsize-p;
+  color: $color-light;
+}

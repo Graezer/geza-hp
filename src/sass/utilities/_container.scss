@@ -1,0 +1,24 @@
+.form-container {
+  background-color: $color-primary;
+  margin-top: 10vh;
+  min-height: 90vh;
+  // display: flex;
+  // position: absolute;
+  // flex-direction: column;
+}
+
+.banner {
+  font-family: 'Franklin Gothic Medium';
+  margin: 3vh 4vw; //y x
+  // position: relative;
+}
+
+.content {
+  padding: 1rem ;
+
+  h3 {
+    color: white;
+  }
+  // border-radius: 8px;
+  // margin: 3vh 8vw 3vh; //top right bottom left; top right&left bottom
+}
