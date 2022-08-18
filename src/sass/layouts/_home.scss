@@ -1,13 +1,8 @@
 // @import '../../images/Small_squared_Geza_Steinert_2021_072csw.jpg';
 
-.coding {
+.home-container {
   background: url('../../images/Small_squared_Geza_Steinert_2021_072csw.jpg');
-  height: 100%;
+  height: 100vh;
   background-position: center;
-}
-
-
-.acting {
-  background: url('../../images/Small_squared_Geza_Steinert_2021_072csw.jpg');
-  background-position: center;
+  background-size: contain;
 }

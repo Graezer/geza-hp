@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   height: 10vh;
-  background: linear-gradient($color-dark, $color-primary);
+  background: linear-gradient($color-dark, rgba(0,0,0,0));
 }
 
 .navbar-item {

@@ -4,16 +4,20 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div className='form-container container is-fluid'>
-
-      <div className='content columns is-desktop'>
-
-        <div className='coding column is-flex'>
-          <Link className="m-3 App-link" to="/coding">CODING</Link> 
+    <div className='form-container home-container'>
+      <div className='content columns'>
+        <div className='coding column is-gapless'>
+          <div className="vh-div">
+            <h1></h1>
+          </div>
+          <Link className="m-3 App-link h1" to="/coder">CODING</Link> 
         </div>
 
-        <div className='acting column is-flex '>
-          <Link className="m-3 App-link" to="/acting">
+        <div className='acting column is-gapless '>
+          <div className="vh-div">
+            <h1></h1>
+          </div>
+          <Link className="m-3 App-link h1" to="/acting">
             ACTING
           </Link> 
         </div>

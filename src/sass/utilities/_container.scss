@@ -1,15 +1,16 @@
+.vh-div {
+  margin-top: 10vh;
+}
+
 .form-container {
   background-color: $color-primary;
-  margin-top: 10vh;
-  min-height: 90vh;
-  // display: flex;
-  // position: absolute;
-  // flex-direction: column;
+  min-height: 100vh;
 }
 
 .banner {
   font-family: 'Franklin Gothic Medium';
-  margin: 3vh 4vw; //y x
+  padding: 1rem;
+  // margin: 3vh 4vw; //y x
   // position: relative;
 }
 
