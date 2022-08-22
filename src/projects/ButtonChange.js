@@ -13,7 +13,7 @@ function ButtonChange() {
     } else {
       count = 0 
     }
-  } 
+  }
 
   const [buttonText, setButtonText] = useState("Click")
 
@@ -21,11 +21,12 @@ function ButtonChange() {
     e.preventDefault();
     setButtonText(clickArr[count])
     setCount()
-    console.log(count)
   }
   
   return (
-    <div className="button" onClick={handleClick}>{buttonText}</div>
+    <div>
+      <div className="button" onClick={handleClick}>{buttonText}</div>
+    </div>
   )
 }
 

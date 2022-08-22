@@ -39,7 +39,7 @@ function BillionBirthday() {
   }
 
   return (
-    <div className=''>
+    <div >
       <label className='m-2'>Calculate your Billionth Second Birthday </label>
       <form className='date-form' onSubmit={handleSubmit}>
         <input type="text" onChange={(e) => setYear(e.target.value)} className='input is-info' placeholder='Year YYYY' pattern='[0-9]*' value={year}  />
