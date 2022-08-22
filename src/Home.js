@@ -1,23 +1,30 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
+// implement scroll navbar
 
 function Home() {
   return (
-    <div className='form-container home-container'>
+    <motion.div 
+      className='home form-container'
+      initial={{opacity: 0, transition: {duration: 0.4}}}
+      animate={{opacity: 1, transition: {duration: 0.4}}}
+      exit={{opacity: 0, transition: {duration: 0.4}}}
+    >
       <div className='content columns'>
         <div className='coding column is-gapless'>
           <div className="vh-div">
-            <h1></h1>
+            <h1>.</h1>
           </div>
           <Link className="m-3 App-link h1" to="/coder">CODING</Link> 
         </div>
 
         <div className='acting column is-gapless '>
           <div className="vh-div">
-            <h1></h1>
+            <h1>.</h1>
           </div>
-          <Link className="m-3 App-link h1" to="/acting">
+          <Link className="m-3 App-link h1" to="/actor">
             ACTING
           </Link> 
         </div>
@@ -34,7 +41,7 @@ Feel free to explore my page to get to know which jobs I have done and am proud 
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

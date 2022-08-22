@@ -5,15 +5,16 @@
   background: linear-gradient($color-dark, rgba(0,0,0,0));
 }
 
-.navbar-item {
+a.navbar-item {
   transition: 300ms;
   border-radius: 4px;
+  color: $color-light;
   
   &:hover {
-    background-color: black;
+    background: rgba(0,0,0,0);
     transition: 300ms;
-    
-  }
+    color: $color-contrast;
+  }  
 }
 
 .navbar-dropdown {
@@ -25,9 +26,16 @@
   border-radius: 4px;
   // background: linear-gradient($color-secondary, $color-primary );
   max-width: min-content;
+
+}
+
+.is-active {
+  background: rgba(0,0,0,0);
+  color: $color-contrast;
 }
 
 .navbar-start {
+  // background: $color-dark ;
   display: flex;
 }
 

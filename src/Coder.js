@@ -2,15 +2,24 @@ import React from 'react'
 import './sass/App.scss';
 // import Random from './projects/RandomColor'
 import BillionBirthday from './projects/BillionBirthday';
+import { motion } from 'framer-motion'
 
+
+// implement API like AJAX
+// implement text with code
 
 function Coding() {
   return (
-    <div className='form-container container'>
+    <motion.div 
+      className='coder form-container container'
+      initial={{opacity: 0, transition: {duration: 0.4}}}
+      animate={{opacity: 1, transition: {duration: 0.4}}}
+      exit={{opacity: 0, transition: {duration: 0.4}}}
+    >
 
       <div className='banner'>
         <div className="vh-div">
-          <h1></h1>
+          <h1>.</h1>
         </div>
 
         <div>
@@ -28,9 +37,9 @@ function Coding() {
       </div>
 
 
-        <div className='content'>
-          <BillionBirthday />
-        </div>
+      <div className='content'>
+        <BillionBirthday />
+      </div>
         
       <div className='container columns .is-variable'>
         <div className='content column'>
@@ -58,10 +67,11 @@ function Coding() {
             <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=I2UBjN5ER4s&t=4098s'>responsive website tutorial</a></li>
             <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=xMNhDf5-hvk'>create multi page app</a> - beware first comments</li>
             <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=FdrEjwymzdY'>page transitions</a></li>
+            <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=1vKiPwEYbyk'>framer motion more general</a></li>
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
