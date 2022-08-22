@@ -3,6 +3,7 @@ import './sass/App.scss';
 // import Random from './projects/RandomColor'
 import BillionBirthday from './projects/BillionBirthday';
 import { motion } from 'framer-motion'
+import ButtonChange from './projects/ButtonChange';
 
 
 // implement API like AJAX
@@ -39,6 +40,10 @@ function Coding() {
 
       <div className='content'>
         <BillionBirthday />
+      </div>
+      
+      <div className='content'>
+        <ButtonChange />
       </div>
         
       <div className='container columns .is-variable'>
