@@ -1,5 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Carousel from './components/Carousel'
+
 
 
 function Actor() {
@@ -23,6 +25,10 @@ function Actor() {
               Portfolio
             </a>
           </p>
+        </div>
+
+        <div className='carousel__container'>
+          <Carousel />
         </div>
       </div>
     </motion.div>
