@@ -1,31 +1,23 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+
+const link = <Link to="/">Bye</Link>
+
+const clickArr = ["Click me!", "You clicked! Nice..", "Haha, again!", "Click, Click.. thats you", "oool right..", "that's..", "enough",
+"What is it?", "ENOUGH", "OK", "I'm out","","","","no means no","",""," ","  ","   ","    ","STAP","you have a serious problem", "ok", "bye then", link, "lol"]
 
 function ButtonChange() {
 
-  const clickArr = ["You clicked! Nice..", "Haha, now twice", "Click, Click.. thats you", "that's..", "enough",
-  "What is it?", "ENOUGH", "OK", "let's start all over..", "Click"]
-  
-  let count = 0
-  
-  const setCount = () => {
-    if (count < clickArr.length) {
-      count ++
-    } else {
-      count = 0 
-    }
-  }
-
-  const [buttonText, setButtonText] = useState("Click")
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    setButtonText(clickArr[count])
-    setCount()
-  }
+  const [count, setCount] = useState(0);
+  const buttonText = clickArr[count % clickArr.length];
+  const handleClick = () => setCount((c) => c + 1);
   
   return (
     <div>
-      <div className="button" onClick={handleClick}>{buttonText}</div>
+      <p>Just a button that changes text</p>
+      <div className="button" onClick={handleClick}>
+        {buttonText}
+      </div>
     </div>
   )
 }

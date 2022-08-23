@@ -34,9 +34,9 @@ function Home() {
         <div className='is-flex is-align-items-center'>
           <div>
             <h1>Geza Steinert</h1>
-            <p>In my chest there are two hearts beating. One for acting and one for coding. In addition there are many more 
-subhearts for stand-up comedy, music, directing, writing, reading, painting, drawing, choreography, teaching, dancing and even math. 
-With all these rythms it's never quiet inside of me. I learned to focus the noise to get jobs done on time - or to get jobs in the first place.
+            <p>In my chest there are two hearts beating. One for acting and one for coding. In addition I have many 
+subhearts pumping: stand-up comedy, music, directing, writing, reading, painting, drawing, choreography, teaching, dancing and even math. 
+I've learned to focus the noise to get jobs done on time - or to get jobs in the first place.
 Feel free to explore my page to get to know which jobs I have done and am proud enough to show. </p>
           </div>
         </div>
