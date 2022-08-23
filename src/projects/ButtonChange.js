@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const link = <Link to="/">Bye</Link>
+const link = <Link className='App-link' to="/">Bye</Link>
 
 const clickArr = ["Click me!", "You clicked! Nice..", "Haha, again!", "Click, Click.. thats you", "oool right..", "that's..", "enough",
 "What is it?", "ENOUGH", "OK", "I'm out","","","","no means no","",""," ","  ","   ","    ","STAP","you have a serious problem", "ok", "bye then", link, "lol"]
@@ -15,7 +15,7 @@ function ButtonChange() {
   return (
     <div>
       <p>Just a button that changes text</p>
-      <div className="button" onClick={handleClick}>
+      <div className="button button-standart" onClick={handleClick}>
         {buttonText}
       </div>
     </div>

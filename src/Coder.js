@@ -60,6 +60,7 @@ function Coding() {
             <li>npm i --save @fortawesome/react-fontawesome@latest</li>
             <li>npm run deploy</li>
             <li>npm install framer motion</li>
+            <li>npm i -S pure-react-carousel</li>
           </ul>
         </div>
         <br/>
@@ -68,11 +69,12 @@ function Coding() {
           <h3  className='ml-4'>Tutorials</h3>
           <ul>
             <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=2hM5viLMJpA' >host free react-app</a></li>
-            <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=2zXEMMEQLIw' >add fontawesome</a></li>
+            <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=2zXEMMEQLIw' >add font awesome</a></li>
             <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=I2UBjN5ER4s&t=4098s'>responsive website tutorial</a></li>
-            <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=xMNhDf5-hvk'>create multi page app</a> - beware first comments</li>
+            <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=xMNhDf5-hvk'>create multi page app</a> - take a look at the comments</li>
             <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=FdrEjwymzdY'>page transitions with framer motion</a></li>
             <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=1vKiPwEYbyk'>framer motion more general</a></li>
+            <li><a className='App-link' rel="noreferrer" target='_blank' href='https://github.com/express-labs/pure-react-carousel'>pure react carousel</a></li>
           </ul>
         </div>
       </div>
