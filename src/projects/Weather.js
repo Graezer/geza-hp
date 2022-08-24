@@ -15,7 +15,8 @@ function Weather() {
       })
     }
   }
-  const url= `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=927f29e30360355547376ffc33cd9e40`
+
+
   return (
     <div>
       <p>Weather API</p>
