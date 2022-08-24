@@ -2,32 +2,57 @@ import React, { useState } from 'react'
 import axios from 'axios'
 
 function Weather() {
-  const url = "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=927f29e30360355547376ffc33cd9e40"
-  const url2= "https://api.openweathermap.org/data/2.5/weather?q=Berlin,de&APPID=927f29e30360355547376ffc33cd9e40"
+
+  const [data, setData] = useState({})
+  const [location, setLocation] = useState('')
+
+  const searchLocation = (event) => {
+    if (event.key === 'Enter'){
+      axios.get(url).then((response) => {
+        setData(response.data)
+        console.log(response.data)
+        setLocation('')
+      })
+    }
+  }
+  const url= `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=927f29e30360355547376ffc33cd9e40`
   return (
     <div>
-      <div className="container">
+      <p>Weather API</p>
+      <div className="container weather">
+        <div className="search">
+          <input 
+          className='input is-info'
+          type="text" 
+          onChange={event => setLocation(event.target.value)}
+          placeholder="City"
+          onKeyPress={searchLocation}
+          />   
+      </div>
         <div className="top">
           <div className="location">
-            <p>Berlin</p>
+            <p>{data.name}</p>
           </div>
+
           <div className="temp">
-            <h1>60 Grad</h1>
+            {data.main ? <h1>{(data.main.temp)}°C</h1> : null }
           </div>
+          
           <div className="description">
-            <p>Wolkig</p>
+            {data.weather ? <p>Sky {data.weather[0].main}</p> : null}
           </div>
         </div>
 
         <div className="bottom">
           <div className="feels">
-            <p>like 61 Grad</p>
+            {data.main ? <p>Feels like {data.main.feels_like} °C</p> : null }
           </div>
           <div className="humidity">
-            <p>high</p>
+            {data.main ? <p>humidity {data.main.humidity} %</p> : null }
           </div>
         </div>
       </div>
+
     </div>
   )
 }

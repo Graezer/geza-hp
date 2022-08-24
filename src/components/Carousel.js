@@ -16,13 +16,14 @@ export default class Carousel extends React.Component {
     const left = "<"
     return (
       <CarouselProvider
-        naturalSlideWidth={9}
-        naturalSlideHeight={16}
+        naturalSlideWidth={90}
+        naturalSlideHeight={160}
         totalSlides={8}
         visibleSlides={1}
-        currentSlide={0}
+        currentSlide={1}
+        className="container"
       >
-        <Slider>
+        <Slider >
           <Slide index={0}><img src="https://filmmakers.de/misc/image?id=2134900&xmax=2000&ymax=1000" alt=""/></Slide>
           <Slide index={1}><img src="https://filmmakers.de/misc/image?id=2134908&xmax=2000&ymax=1000" alt=""/></Slide>
           <Slide index={2}><img src="https://filmmakers.de/misc/image?id=2124909&xmax=2000&ymax=1000" alt=""/></Slide>
@@ -32,8 +33,8 @@ export default class Carousel extends React.Component {
           <Slide index={6}><img src="https://filmmakers.de/misc/image?id=2134904&xmax=2000&ymax=1000" alt=""/></Slide>
           <Slide index={7}><img src="https://filmmakers.de/misc/image?id=2134906&xmax=2000&ymax=1000" alt=""/></Slide>
         </Slider>
-        <ButtonBack className="button is-dark">{left}</ButtonBack>
-        <ButtonNext className="button is-dark">{right}</ButtonNext>
+        <ButtonBack className="button is-dark is-outlined">{left}</ButtonBack>
+        <ButtonNext className="button is-dark is-outlined">{right}</ButtonNext>
       </CarouselProvider>
     );
   }

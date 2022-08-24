@@ -10,27 +10,24 @@ function Actor() {
       initial={{opacity: 0, transition: {duration: 0.4}}}
       animate={{opacity: 1, transition: {duration: 0.4}}}
       exit={{opacity: 0, transition: {duration: 0.4}}}
-      className='actor'
+      className='actor form-container container'
     >
-      <div className='form-container '>
         <div className='banner'>
           <div className="vh-div">
             <h1>.</h1>
           </div>
-          <h1>In the future this Page will present Showreels and Photos</h1>
-          <p>until then, check out my
-            <a className="App-link m-2"
-              href="https://www.schauspielervideos.de/fullprofile/schauspieler-geza-willem-artus-steinert.html"
-              rel="noopener noreferrer">
-              Portfolio
-            </a>
-          </p>
+          <h1>Steinert Schauspiel</h1>
+          <a className="App-link m-2"
+            href="https://www.schauspielervideos.de/fullprofile/schauspieler-geza-willem-artus-steinert.html"
+            rel="noopener noreferrer">
+            Portfolio
+          </a>
         </div>
 
-        <div className='container carousel__container'>
+        <div className='container '>
+          <p>2020 by Alan Ovaska</p>
           <Carousel />
         </div>
-      </div>
     </motion.div>
   )
 }

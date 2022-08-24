@@ -4,6 +4,7 @@ import './sass/App.scss';
 import BillionBirthday from './projects/BillionBirthday';
 import { motion } from 'framer-motion'
 import ButtonChange from './projects/ButtonChange';
+import Weather from './projects/Weather';
 
 
 // implement API like AJAX
@@ -45,7 +46,16 @@ function Coding() {
       <div className='content'>
         <ButtonChange />
       </div>
+
+      <div className='content'>
+        <Weather />
+      </div>
         
+      <div className="banner vh-div">
+        <h1>.</h1>
+        <h3>Infos</h3>
+      </div>
+
       <div className='container columns .is-variable'>
         <div className='content column'>
           <h3 className='ml-4' >Installed Packages</h3>
