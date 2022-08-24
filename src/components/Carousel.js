@@ -6,11 +6,14 @@ import {
   ButtonBack,
   ButtonNext
 } from "pure-react-carousel";
-
 import "pure-react-carousel/dist/react-carousel.es.css";
 
+
 export default class Carousel extends React.Component {
+
   render() {
+    const right = ">"
+    const left = "<"
     return (
       <CarouselProvider
         naturalSlideWidth={9}
@@ -29,8 +32,8 @@ export default class Carousel extends React.Component {
           <Slide index={6}><img src="https://filmmakers.de/misc/image?id=2134904&xmax=2000&ymax=1000" alt=""/></Slide>
           <Slide index={7}><img src="https://filmmakers.de/misc/image?id=2134906&xmax=2000&ymax=1000" alt=""/></Slide>
         </Slider>
-        <ButtonBack className="button">Back</ButtonBack>
-        <ButtonNext className="button">Next</ButtonNext>
+        <ButtonBack className="button is-dark">{left}</ButtonBack>
+        <ButtonNext className="button is-dark">{right}</ButtonNext>
       </CarouselProvider>
     );
   }

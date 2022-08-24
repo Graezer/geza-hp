@@ -61,6 +61,7 @@ function Coding() {
             <li>npm run deploy</li>
             <li>npm install framer motion</li>
             <li>npm i -S pure-react-carousel</li>
+            <li>npm install axios</li>
           </ul>
         </div>
         <br/>
@@ -75,6 +76,7 @@ function Coding() {
             <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=FdrEjwymzdY'>page transitions with framer motion</a></li>
             <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=1vKiPwEYbyk'>framer motion more general</a></li>
             <li><a className='App-link' rel="noreferrer" target='_blank' href='https://github.com/express-labs/pure-react-carousel'>pure react carousel</a></li>
+            <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=UjeXpct3p7M'>weather API</a></li>
           </ul>
         </div>
       </div>

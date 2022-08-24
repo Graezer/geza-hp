@@ -27,7 +27,7 @@ function Actor() {
           </p>
         </div>
 
-        <div className='carousel__container'>
+        <div className='container carousel__container'>
           <Carousel />
         </div>
       </div>

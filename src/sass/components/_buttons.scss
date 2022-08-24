@@ -1,10 +1,10 @@
 .button-standart {
   background: $color-primary;
-  color: $color-white;
+  color: $color-light;
   transition: 300ms;
   
   &:hover {
-    color: $color-light;
+    color: $color-white;
     transition: 300ms;
   }
 
