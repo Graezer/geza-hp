@@ -1,5 +1,14 @@
-Hey! This is my homepage and after endless tries I found this tutorial to host a react app with gh-pages:
+Hey! This is my Homepage for both my acting and coding career.
+For now it is a website to show how far my skillset reaches as a coder. 
 
+I am on linked in if you want to get in touch
+https://linkedin.com/in/coder-geza-steinert
+
+''''''''''''''''''''''''
+
+SETUP of this page:
+
+Tutorial to host a react app with gh-pages
 https://www.youtube.com/watch?v=2hM5viLMJpA
 
 prior to this I did (in the terminal): 
@@ -25,4 +34,8 @@ In the end make sure to:
  github repo -> settings -> pages 
   and set at "Source" the branch to "gh-pages" and the folder to "root".
 
-  Thanks for reading.
+
+''''''''''''''''''''''''
+
+Thanks for reading,
+Geza Steinert
