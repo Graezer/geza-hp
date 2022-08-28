@@ -1,21 +1,24 @@
 import React, { useState } from 'react'
-import axios from 'axios'
 
 function Weather() {
 
   const [data, setData] = useState({})
   const [location, setLocation] = useState('')
-
+  
   const searchLocation = (event) => {
-    if (event.key === 'Enter'){
-      axios.get(url).then((response) => {
-        setData(response.data)
-        console.log(response.data)
-        setLocation('')
-      })
-    }
-  }
+    // console.log("API_KEY", process.env.REACT_APP_API_KEY);
 
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`
+    if (event.code === 'Enter'){
+      console.log('Enter Key')
+        fetch(url, {mode: "cors"}).then((response) => response.json()).then((res) => {
+        setData(res)
+        console.log(res)
+        // setLocation('')
+      }).catch(err=>console.log(err.message))
+    }
+
+  }
 
   return (
     <div>
@@ -24,7 +27,7 @@ function Weather() {
         <div className="search">
           <input 
           className='input is-info'
-          type="text" 
+          type="text"
           onChange={event => setLocation(event.target.value)}
           placeholder="City"
           onKeyPress={searchLocation}

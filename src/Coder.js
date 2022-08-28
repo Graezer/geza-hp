@@ -63,15 +63,20 @@ function Coding() {
             <li>npm create-react-app</li>
             <li>npm install node-sass</li>
             <li>npm install bulma</li>
+            <li>npm run build</li>
+            <li>npm run deploy</li>
             <li>npm i moment</li>
             <li>npm i --save @fortawesome/fontawesome-svg-core</li>
             <li>npm install --save @fortawesome/free-solid-svg-icons</li>
             <li>npm i --save @fortawesome/free-regular-svg-icons</li>
             <li>npm i --save @fortawesome/react-fontawesome@latest</li>
-            <li>npm run deploy</li>
             <li>npm install framer motion</li>
             <li>npm i -S pure-react-carousel</li>
-            <li>npm install axios</li>
+            <li>npm i axios</li>
+            <li>npm i cors</li>
+            <li>npm i dotenv</li>
+            <li>npm i express</li>
+            <li>npm i nodemon</li>
           </ul>
         </div>
         <br/>
@@ -87,6 +92,7 @@ function Coding() {
             <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=1vKiPwEYbyk'>framer motion more general</a></li>
             <li><a className='App-link' rel="noreferrer" target='_blank' href='https://github.com/express-labs/pure-react-carousel'>pure react carousel</a></li>
             <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=UjeXpct3p7M'>weather API</a></li>
+            <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=FcwfjMebjTU'>How to hide an API Key</a></li>
           </ul>
         </div>
       </div>
