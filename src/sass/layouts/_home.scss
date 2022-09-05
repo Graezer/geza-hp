@@ -1,14 +1,28 @@
 // @import '../../images/Small_squared_Geza_Steinert_2021_072csw.jpg';
 
 .home {
-  background: url('../../images/Small_squared_Geza_Steinert_2021_072csw.jpg');
-  height: 100vh;
-  background-position: center;
-  background-size: contain;
-
-  .banner {
+  
+  .title {
     position: fixed;
-    bottom: 1rem;
+    bottom: 3rem;
+    left: 3rem;
     max-width: 50rem;
+    color: $color-white;
+  }
+  
+  .coding {
+    background: url('../../images/Small_squared_Geza_Steinert_2021_072csw.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 4rem;
+  }
+  
+  .acting {
+    background: url('../../images/Small_squared_Geza_Steinert_2021_072csw.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 4rem;
   }
 }

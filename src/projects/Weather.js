@@ -1,58 +1,74 @@
 import React, { useState } from 'react'
+import axios from 'axios'
+
 
 function Weather() {
-
+  
   const [data, setData] = useState({})
   const [location, setLocation] = useState('')
-  
+  const url = `https://gwasteinerts.korconnect.io/openweathermap/weather?q=${location}&units=metric`
+
   const searchLocation = (event) => {
-    // console.log("API_KEY", process.env.REACT_APP_API_KEY);
+    if (event.key === 'Enter'){
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`
-    if (event.code === 'Enter'){
-      console.log('Enter Key')
-        fetch(url, {mode: "cors"}).then((response) => response.json()).then((res) => {
-        setData(res)
-        console.log(res)
-        // setLocation('')
-      }).catch(err=>console.log(err.message))
+      axios.get(url, 
+        { headers: 
+          {
+            'x-api-key': 'TQbtzAhVlj9mORBTI951p4mBBL3nn8NwaVJb7eVf' 
+          } 
+        })
+        .then(response => {
+          setData(response.data)
+          console.log(response.data)
+          console.log(response)
+        })
+        .catch(error => {
+          console.log(error)
+        })
+      setLocation('')
     }
-
   }
 
   return (
     <div>
-      <p>Weather API</p>
-      <div className="container weather">
-        <div className="search">
-          <input 
-          className='input is-info'
-          type="text"
-          onChange={event => setLocation(event.target.value)}
-          placeholder="City"
-          onKeyPress={searchLocation}
-          />   
-      </div>
-        <div className="top">
-          <div className="location">
-            <p>{data.name}</p>
+      <p>How's Weather in your City?</p>
+      <div className="weather">
+        <div className="top container">
+          <div className="search">
+            <input 
+            className='input is-info'
+            type="text"
+            value={location}
+            onChange={event => setLocation(event.target.value)}
+            placeholder="City"
+            onKeyPress={searchLocation}
+            />   
           </div>
 
-          <div className="temp">
-            {data.main ? <h1>{(data.main.temp)}°C</h1> : null }
+          <div className="columns">
+            <div className="column">
+              <h2>{data.name}</h2>
+            </div>
+
+            <div className="column">
+              {data.main ? <h1>{(data.main.temp)}°C</h1> : null }
+            </div>
           </div>
           
-          <div className="description">
-            {data.weather ? <p>Sky {data.weather[0].main}</p> : null}
-          </div>
         </div>
 
-        <div className="bottom">
-          <div className="feels">
+        <div className="bottom columns is-mobile">
+
+          <div className="column">
             {data.main ? <p>Feels like {data.main.feels_like} °C</p> : null }
           </div>
-          <div className="humidity">
-            {data.main ? <p>humidity {data.main.humidity} %</p> : null }
+        
+          <div className="column">
+            {data.weather ? <p>{data.weather[0].main}</p> : null}
+          </div>
+        
+          <div className="column">
+            {data.main ? <p>Humidity {data.main.humidity} %</p> : null }
           </div>
         </div>
       </div>

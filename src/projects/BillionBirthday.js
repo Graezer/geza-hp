@@ -40,9 +40,7 @@ function BillionBirthday() {
 
   return (
     <div >
-      <label className='m-2'>Calculate your Billionth Second Birthday </label>
-      <p className='m-2'>Enter your dates of birth - year, month, day, hour, minute.</p>
-      <p className='m-2'>Your data isn't stored whatsoever.</p>
+      <label className='mb-3'>Calculate your Billionth Second Birthday </label>
       <form className='date-form' onSubmit={handleSubmit}>
         <input type="text" onChange={(e) => setYear(e.target.value)} className='input is-info' placeholder='Year YYYY' pattern='[0-9]*' value={year}  />
         <input type="text" onChange={(e) => setMonth(e.target.value)} className='input is-info' placeholder='Month MM' pattern='[0-9]*' value={month} />
@@ -58,7 +56,7 @@ function BillionBirthday() {
           </div>
         ))}
         
-      <p><a className='App-link m-3' href="https://momentjs.com/" target="_blank" rel="noreferrer">Moment.js</a></p>
+      <p><a className='App-link' href="https://momentjs.com/" target="_blank" rel="noreferrer">Moment.js</a></p>
     </div>
   )
 }

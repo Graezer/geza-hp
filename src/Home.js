@@ -12,35 +12,33 @@ function Home() {
       animate={{opacity: 1, transition: {duration: 0.4}}}
       exit={{opacity: 0, transition: {duration: 0.4}}}
     >
-      <div className='content columns'>
-        <div className='coding column is-gapless'>
-          <div className="vh-div">
-            <h1>.</h1>
+
+        <div className='content columns'>
+          <div className='coding column'>
+            <Link className="App-link h1 ml-3" to="/coder">
+              CODING
+            </Link> 
           </div>
-          <Link className="App-link h1" to="/coder">CODING</Link> 
+          <div className='acting column '>
+            <Link className="App-link h1 ml-3" to="/actor">
+              ACTING
+            </Link> 
+          </div>
         </div>
 
-        <div className='acting column is-gapless '>
-          <div className="vh-div">
-            <h1>.</h1>
+        <div className='title'>
+          <div className='is-flex is-align-items-center'>
+            <div>
+              <h1>Geza Steinert</h1>
+              <p>In my chest there are two hearts beating. One for acting and one for coding. In addition I have many 
+                subhearts pumping: stand-up comedy, music, directing, writing, reading, painting, drawing, choreography, 
+                teaching, dancing and even math. 
+                I've learned to focus the noise to get jobs done on time - or to get jobs in the first place.
+                Feel free to explore my page to get to know which jobs I have done and am proud enough to show. </p>
+            </div>
           </div>
-          <Link className="App-link h1" to="/actor">
-            ACTING
-          </Link> 
         </div>
-      </div>
 
-      <div className='banner'>
-        <div className='is-flex is-align-items-center'>
-          <div>
-            <h1>Geza Steinert</h1>
-            <p>In my chest there are two hearts beating. One for acting and one for coding. In addition I have many 
-subhearts pumping: stand-up comedy, music, directing, writing, reading, painting, drawing, choreography, teaching, dancing and even math. 
-I've learned to focus the noise to get jobs done on time - or to get jobs in the first place.
-Feel free to explore my page to get to know which jobs I have done and am proud enough to show. </p>
-          </div>
-        </div>
-      </div>
     </motion.div>
   )
 }

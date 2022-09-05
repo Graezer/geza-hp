@@ -17,7 +17,6 @@ function NavBar() {
               setisActive(!isActive);
             }}
             role="button"
-            href='noreferrer'
             className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
             aria-label="menu"
             aria-expanded="false"
