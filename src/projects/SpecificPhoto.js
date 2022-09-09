@@ -1,7 +1,7 @@
 import React from 'react'
 import React, { useState } from 'react'
 
-function RandomPhoto() {
+function SpecificPhoto() {
   const [data, setData] = useState({})
   const url = `https://gwasteinerts.korconnect.io/Unsplash/`
 
@@ -27,4 +27,4 @@ function RandomPhoto() {
     </div>
   )
 }
-export default RandomPhoto
+export default SpecificPhoto

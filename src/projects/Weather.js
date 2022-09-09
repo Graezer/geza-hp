@@ -10,7 +10,6 @@ function Weather() {
 
   const searchLocation = (event) => {
     if (event.key === 'Enter'){
-
       axios.get(url, 
         { headers: 
           {
@@ -72,7 +71,6 @@ function Weather() {
           </div>
         </div>
       </div>
-
     </div>
   )
 }

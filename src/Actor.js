@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Carousel from './components/Carousel'
+import PhotoGallery from './projects/PhotoGallery'
 
 
 
@@ -25,6 +26,14 @@ function Actor() {
           <p>2020 by Alan Ovaska</p>
           <Carousel />
         </div>
+
+
+        <div className='container is-fluid'>
+          <p>2020 by Alan Ovaska</p>
+          <PhotoGallery />
+        </div>
+
+
     </motion.div>
   )
 }
