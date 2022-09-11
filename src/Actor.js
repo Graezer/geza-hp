@@ -1,9 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Carousel from './components/Carousel'
-import PhotoGallery from './projects/PhotoGallery'
-
-
 
 function Actor() {
   return (
@@ -23,16 +20,14 @@ function Actor() {
         </div>
 
         <div className='container is-fluid'>
-          <p>2020 by Alan Ovaska</p>
+          <div className='is-flex is-justify-content-center m-3'>
+            <p className=''>Fotos by
+              <a className='App-Link m-2' rel="noopener noreferrer" href="https://alanovaska.com/about.html">Alan Ovaska</a>
+              - 2020
+            </p>
+          </div>
           <Carousel />
         </div>
-
-
-        <div className='container is-fluid'>
-          <p>2020 by Alan Ovaska</p>
-          <PhotoGallery />
-        </div>
-
 
     </motion.div>
   )

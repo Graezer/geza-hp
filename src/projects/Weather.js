@@ -47,27 +47,13 @@ function Weather() {
           <div className="columns">
             <div className="column">
               <h2>{data.name}</h2>
+              {data.weather ? <p>{data.weather[0].main}</p> : null}
             </div>
 
             <div className="column">
               {data.main ? <h1>{(data.main.temp)}°C</h1> : null }
+              {data.main ? <p>Feels like {data.main.feels_like} °C</p> : null }
             </div>
-          </div>
-          
-        </div>
-
-        <div className="bottom columns is-mobile">
-
-          <div className="column">
-            {data.main ? <p>Feels like {data.main.feels_like} °C</p> : null }
-          </div>
-        
-          <div className="column">
-            {data.weather ? <p>{data.weather[0].main}</p> : null}
-          </div>
-        
-          <div className="column">
-            {data.main ? <p>Humidity {data.main.humidity} %</p> : null }
           </div>
         </div>
       </div>

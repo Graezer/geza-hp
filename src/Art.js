@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import CenteredPhoto from './projects/CenteredPhoto'
 
 function Art() {
   return (
@@ -9,12 +10,9 @@ function Art() {
       exit={{opacity: 0, transition: {duration: 0.4}}}
     >
       <div className='banner'>
-        <div className="vh-div">
-          <h1>.</h1>
-        </div>
         <h1>In the future I will show some of my Art here</h1>
       </div>
-
+      <CenteredPhoto />
     </motion.div>
   )
 }

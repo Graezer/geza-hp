@@ -12,15 +12,12 @@
 .banner {
   font-family: 'Franklin Gothic Medium';
   background: opacity($color: #00000062);
-  background-image: url(../../images/cloud.jpg);
   background-position: center;
   background-size: cover;
   width: 100;
   height: auto;
   padding: 4rem;
   margin-bottom: 2rem;
-  // margin: 3vh 4vw; //y x
-  // position: relative;
 
   .text {
     margin: 2rem;
