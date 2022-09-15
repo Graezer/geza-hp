@@ -5,6 +5,7 @@ import BillionBirthday from './projects/BillionBirthday';
 import { motion } from 'framer-motion'
 import ButtonChange from './projects/ButtonChange';
 import Weather from './projects/Weather';
+import RandomPhoto from './projects/RandomPhoto';
 
 
 function Coding() {
@@ -31,6 +32,11 @@ function Coding() {
       </div>
 
       <div className="container is-fluid">
+
+        <div className='content' >
+          <RandomPhoto />   
+        </div>
+
         <div className='content'>
           <BillionBirthday />
         </div>
@@ -49,7 +55,7 @@ function Coding() {
 
         <div className='container columns .is-variable'>
           <div className='content column'>
-            <h3 className='' >Installed Packages</h3>
+            <h3>Installed Packages</h3>
             <ul>
               <li>npm create-react-app</li>
               <li>npm install node-sass</li>

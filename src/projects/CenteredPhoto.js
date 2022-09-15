@@ -1,11 +1,11 @@
 import React from 'react'
-import '../images/cloud.jpg'
+import cloud from '../images/cloud.jpg'
 
 function CenteredPhoto() {
   return (
     <div className='stacked'>
-      <p>CenteredPhoto</p> 
-      <img className='media' src="../images/Geza_Steinert_2021_1.jpg" alt="LALALAL" />
+      <p>Cloud</p> 
+      <img className='media' src={cloud} alt="LALALAL" />
     </div>
   )
 }

@@ -15,16 +15,17 @@ function Weather() {
           {
             'x-api-key': 'TQbtzAhVlj9mORBTI951p4mBBL3nn8NwaVJb7eVf' 
           } 
-        })
-        .then(response => {
-          setData(response.data)
-          console.log(response.data)
-          console.log(response)
-        })
-        .catch(error => {
-          console.log(error)
-        })
-      setLocation('')
+        }
+      )
+      .then(response => {
+        setData(response.data)
+        console.log(response.data)
+        console.log(response)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+    setLocation('')
     }
   }
 
