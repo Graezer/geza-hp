@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/geza-hp/static/css/main.ac82aee3.css",
-    "main.js": "/geza-hp/static/js/main.11cfb179.js",
+    "main.css": "/geza-hp/static/css/main.b7c49f76.css",
+    "main.js": "/geza-hp/static/js/main.fdd41c4a.js",
     "static/js/787.7857f389.chunk.js": "/geza-hp/static/js/787.7857f389.chunk.js",
     "static/media/cloud.jpg": "/geza-hp/static/media/cloud.6f49bf7bcf2e62ade86a.jpg",
     "static/media/Small_squared_Geza_Steinert_2021_072csw.jpg": "/geza-hp/static/media/Small_squared_Geza_Steinert_2021_072csw.f1eaea843ba159dee633.jpg",
     "static/media/logo.svg": "/geza-hp/static/media/logo.2ed8872afe144349d85414aa734c9ce3.svg",
     "index.html": "/geza-hp/index.html",
-    "main.ac82aee3.css.map": "/geza-hp/static/css/main.ac82aee3.css.map",
-    "main.11cfb179.js.map": "/geza-hp/static/js/main.11cfb179.js.map",
+    "main.b7c49f76.css.map": "/geza-hp/static/css/main.b7c49f76.css.map",
+    "main.fdd41c4a.js.map": "/geza-hp/static/js/main.fdd41c4a.js.map",
     "787.7857f389.chunk.js.map": "/geza-hp/static/js/787.7857f389.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac82aee3.css",
-    "static/js/main.11cfb179.js"
+    "static/css/main.b7c49f76.css",
+    "static/js/main.fdd41c4a.js"
   ]
 }
