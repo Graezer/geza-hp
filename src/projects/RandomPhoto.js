@@ -3,19 +3,18 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 
 function RandomPhoto() {
-  const [data, setData] = useState({})
+  const [data, setData] = useState([])
   const url = `https://gwasteinerts.korconnect.io/Unsplash/`
-
+  console.log(data)
   
-  const getPhoto = (event) => {
-    axios.get(url, 
+  const getPhoto = () => {
+    axios.get(url,
       { 
         headers: { "unsplash-api-key": "NdseUV9CyG4405ZlLoYp36TRHctRvNRJaw7tOmfD" }
       }
     )
     .then(response => {
-      setData(response.data)
-      console.log(response.data)
+      setData(response)
       console.log(response)
     })
     .catch(error => {
@@ -25,12 +24,12 @@ function RandomPhoto() {
 
     useEffect(() => {
       getPhoto()
-    },[])
+    })
   
   return (
     <div>
-      {/* <img href={data.links.html} alt={data.alt_description}/>
-      <p>Photo by {data.username} on unsplash.it</p> */}
+      <img href={data.links.html} alt={data.alt_description}/>
+      <p>Photo by {data.username} on unsplash.it</p>
     </div>
   )
 }

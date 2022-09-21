@@ -6,17 +6,13 @@ function Weather() {
   
   const [data, setData] = useState({})
   const [location, setLocation] = useState('')
-  const url = `https://gwasteinerts.korconnect.io/openweathermap/weather?q=${location}&units=metric`
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=${process.env.REACT_APP_WEATHER_KEY}`
 
   const searchLocation = (event) => {
+    console.log(process.env.REACT_APP_WEATHER_KEY)
+
     if (event.key === 'Enter'){
-      axios.get(url, 
-        { headers: 
-          {
-            'x-api-key': 'TQbtzAhVlj9mORBTI951p4mBBL3nn8NwaVJb7eVf' 
-          } 
-        }
-      )
+      axios.get(url)
       .then(response => {
         setData(response.data)
         console.log(response.data)

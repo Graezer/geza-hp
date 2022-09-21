@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Routes, useLocation } from 'react-router-dom'
+import { Route, Routes, useLocation, Navigate} from 'react-router-dom'
 
 import Home from '../Home.js'
 import Coder from '../Coder.js'
@@ -17,7 +17,8 @@ function AnimatedRoutes() {
         <Route path="/" element={<Home/>}/> 
         <Route path="/Coder" element={<Coder/>}/>
         <Route path="/Actor" element={<Actor/>}/>
-        <Route path="/Art" element={<Art/>}/> 
+        <Route path="/Art" element={<Art/>}/>
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </AnimatePresence>
   )

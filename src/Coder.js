@@ -34,7 +34,7 @@ function Coding() {
       <div className="container is-fluid">
 
         <div className='content' >
-          <RandomPhoto />   
+          {/* <RandomPhoto />    */}
         </div>
 
         <div className='content'>
