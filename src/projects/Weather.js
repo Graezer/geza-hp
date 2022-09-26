@@ -39,17 +39,18 @@ function Weather() {
             placeholder="City"
             onKeyPress={searchLocation}
             />   
+            <p className='photo-info'>Photo by C Dustin @dianamia - unsplash</p>
           </div>
 
           <div className="columns">
             <div className="column">
               <h2>{data.name}</h2>
-              {data.weather ? <p>{data.weather[0].main}</p> : null}
+              {data.weather ? <h3>{data.weather[0].main}</h3> : null}
             </div>
 
             <div className="column">
               {data.main ? <h1>{(data.main.temp)}°C</h1> : null }
-              {data.main ? <p>Feels like {data.main.feels_like} °C</p> : null }
+              {data.main ? <h3>Feels like {data.main.feels_like} °C</h3> : null }
             </div>
           </div>
         </div>

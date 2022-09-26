@@ -3,34 +3,34 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 
 function RandomPhoto() {
-  const [data, setData] = useState([])
-  const url = `https://gwasteinerts.korconnect.io/Unsplash/`
-  console.log(data)
+  const url = `https://api.unsplash.com/photos/random/?client_id=${process.env.REACT_APP_UNSPLASH_KEY}`
+  const [data, setData] = useState({})
   
-  const getPhoto = () => {
-    axios.get(url,
-      { 
-        headers: { "unsplash-api-key": "NdseUV9CyG4405ZlLoYp36TRHctRvNRJaw7tOmfD" }
-      }
-    )
-    .then(response => {
-      setData(response)
-      console.log(response)
-    })
-    .catch(error => {
-      console.log(error)
-    })
-  }
+  const getPhoto = async () => {
+    await axios
+      .get(url)
+      .then(response => {
+        setData(response.data)
+        setImageUrl(response.data.urls.regular)
+        console.log(response.data)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+    }
+  
+  useEffect(() => {
+    getPhoto()
+  },[])
 
-    useEffect(() => {
-      getPhoto()
-    })
-  
   return (
     <div>
-      <img href={data.links.html} alt={data.alt_description}/>
-      <p>Photo by {data.username} on unsplash.it</p>
+      <img src={data.urls?.regular} />
+      <p>
+        Photo by {data?.user?.username} {data?.user?.name} - found on unsplash
+      </p>
     </div>
   )
 }
+
 export default RandomPhoto
