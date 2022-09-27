@@ -14,7 +14,7 @@ function ButtonChange() {
   
   return (
     <div>
-      <p>Just a button that changes text</p>
+      {/* <p>Just a button that changes text</p> */}
       <div className="button button-standart" onClick={handleClick}>
         {buttonText}
       </div>

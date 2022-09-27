@@ -15,18 +15,20 @@ function Home() {
 
         <div className='content columns'>
           <div className='coding column'>
-            <Link className="App-link h1 ml-3" to="/coder">
-              CODING
+            <Link className="App-link h1" to="/coder">
+              <br/>
+              &nbsp;&nbsp;CODING
             </Link> 
           </div>
-          <div className='acting column '>
-            <Link className="App-link h1 ml-3" to="/actor">
-              ACTING
+          <div className='acting column'>
+            <Link className="App-link h1" to="/actor">
+              <br/>
+              &nbsp;&nbsp;ACTING
             </Link> 
           </div>
         </div>
 
-        <div className='title'>
+        <div className='home-left-bottom-box'>
           <div className='is-flex is-align-items-center'>
             <div>
               <h1>Geza Steinert</h1>

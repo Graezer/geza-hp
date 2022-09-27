@@ -40,13 +40,13 @@ function BillionBirthday() {
 
   return (
     <div >
-      <label className='mb-3'>Calculate your Billionth Second Birthday </label>
+      {/* <label className='mb-3'>Calculate your Billionth Second Birthday </label> */}
       <form className='date-form' onSubmit={handleSubmit}>
-        <input type="text" onChange={(e) => setYear(e.target.value)} className='input is-info' placeholder='Year YYYY' pattern='[0-9]*' value={year}  />
-        <input type="text" onChange={(e) => setMonth(e.target.value)} className='input is-info' placeholder='Month MM' pattern='[0-9]*' value={month} />
-        <input type="text" onChange={(e) => setDay(e.target.value)} className='input is-info' placeholder='Day DD' pattern='[0-9]*' value={day} />
-        <input type="text" onChange={(e) => setHour(e.target.value)} className='input is-info' placeholder='Hour HH' pattern='[0-9]*' value={hour}/>
-        <input type="text" onChange={(e) => setMinute(e.target.value)} className='input is-info' placeholder='Minute HH' pattern='[0-9]*' value={minute}/>
+        <input type="text" onChange={(e) => setYear(e.target.value)} className='input is-info' placeholder='Year' pattern='[0-9]*' value={year}  />
+        <input type="text" onChange={(e) => setMonth(e.target.value)} className='input is-info' placeholder='Month' pattern='[0-9]*' value={month} />
+        <input type="text" onChange={(e) => setDay(e.target.value)} className='input is-info' placeholder='Day' pattern='[0-9]*' value={day} />
+        <input type="text" onChange={(e) => setHour(e.target.value)} className='input is-info' placeholder='Hour' pattern='[0-9]*' value={hour}/>
+        <input type="text" onChange={(e) => setMinute(e.target.value)} className='input is-info' placeholder='Min' pattern='[0-9]*' value={minute}/>
         <button type="submit" className='button is-dark'>Clear</button> 
       </form>
         {(calc() === 'Invalid date' ? '' : (

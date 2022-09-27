@@ -11,7 +11,6 @@ function RandomPhoto() {
       .get(url)
       .then(response => {
         setData(response.data)
-        setImageUrl(response.data.urls.regular)
         console.log(response.data)
       })
       .catch(error => {
@@ -25,7 +24,7 @@ function RandomPhoto() {
 
   return (
     <div>
-      <img src={data.urls?.regular} />
+      <img src={data.urls?.regular} alt="" />
       <p>
         Photo by {data?.user?.username} {data?.user?.name} - found on unsplash
       </p>

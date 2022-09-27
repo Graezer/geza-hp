@@ -1,5 +1,10 @@
-.vh-div {
-  margin-top: 10vh;
+.section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  border: 1px solid 
+  rgba($color: $color-grey, $alpha: .8)
+  
 }
 
 .form-container {
@@ -10,24 +15,19 @@
 }
 
 .banner {
-  font-family: 'Franklin Gothic Medium';
   background: opacity($color: #00000062);
   background-position: center;
   background-size: cover;
-  width: 100;
-  height: auto;
-  padding: 4rem;
   margin-bottom: 2rem;
-
-  .text {
-    margin: 2rem;
-  }
 }
 
-.content {
-  h3 {
-    color: white;
+.photo-description {
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+
+  p {
+    font-size: 0.7rem;
+    color: rgba($color: $color-grey, $alpha: .8)
   }
-  // border-radius: 8px;
-  // margin: 3vh 8vw 3vh; //top right bottom left; top right&left bottom
 }

@@ -1,13 +1,21 @@
-// @import '../../images/Small_squared_Geza_Steinert_2021_072csw.jpg';
-
 .home {
+
+  a {
+    margin-left: 3rem;
+  }
   
-  .title {
+  .home-left-bottom-box {
     position: fixed;
     bottom: 3rem;
     left: 3rem;
     max-width: 50rem;
-    color: $color-white;
+    color: $color-grey;
+    transition: 500ms;
+
+    &:hover {
+      transition: 500ms;
+      color: $color-contrast;
+    }
   }
   
   .coding {

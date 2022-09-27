@@ -27,9 +27,8 @@ function Weather() {
 
   return (
     <div>
-      <p>How's Weather in your City?</p>
       <div className="weather">
-        <div className="top container">
+        <div className="top">
           <div className="search">
             <input 
             className='input is-info'
@@ -39,7 +38,7 @@ function Weather() {
             placeholder="City"
             onKeyPress={searchLocation}
             />   
-            <p className='photo-info'>Photo by C Dustin @dianamia - unsplash</p>
+            {/* <p className='photo-info'>Photo by C Dustin @dianamia - unsplash</p> */}
           </div>
 
           <div className="columns">
