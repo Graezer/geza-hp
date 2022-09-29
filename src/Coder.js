@@ -5,6 +5,7 @@ import BillionBirthday from './projects/BillionBirthday';
 import { motion } from 'framer-motion'
 import ButtonChange from './projects/ButtonChange';
 import Weather from './projects/Weather';
+import RandomPhoto from './projects/RandomPhoto'
 
 
 function Coding() {
@@ -15,7 +16,7 @@ function Coding() {
       animate={{opacity: 1, transition: {duration: 0.4}}}
       exit={{opacity: 0, transition: {duration: 0.4}}}
     >
-      <section className='coding-banner hero is-large'>
+      <section className='coding-banner hero relative is-large'>
         <div className='hero-body'>
           <p className='title'>Graezer</p>
           <p className='subtitle'>"Help me to help you" - Dr.Cox</p>
@@ -37,6 +38,18 @@ function Coding() {
       <div className="container is-fluid">
 
         <section className="section is-medium">
+          <h1 className="title">Project WeatherAPI</h1>
+          <h2 className="subtitle">how is weather in the city of your choice?</h2>
+          <Weather />
+        </section>
+
+        <section className="section is-medium relative photo-section">
+          <h1 className="title">Project RandomPhoto</h1>
+          <h2 className="subtitle">click to see a random photo from unsplash</h2>
+          <RandomPhoto />
+        </section>
+
+        <section className="section is-medium">
           <h1 className="title">Project BillionBirthday</h1>
           <h2 className="subtitle">calculate your billionth second birthday </h2>
           <BillionBirthday />
@@ -49,15 +62,8 @@ function Coding() {
         </section>
         
         <section className="section is-medium">
-          <h1 className="title">Project WeatherAPI</h1>
-          <h2 className="subtitle">how is weather in the city of your choice?</h2>
-          <Weather />
-        </section>
-
-
-        <section className="section is-medium">
           <h1 className="title">Info</h1>
-          <h2 className="subtitle">every dependency and tutorial i used</h2>
+          <h2 className="subtitle">every dependency and tutorial that I've used</h2>
           <Info />
         </section>
       </div>

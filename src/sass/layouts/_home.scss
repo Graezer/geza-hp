@@ -1,20 +1,33 @@
 .home {
+  overflow: hidden;
 
   a {
     margin-left: 3rem;
   }
   
-  .home-left-bottom-box {
-    position: fixed;
-    bottom: 3rem;
-    left: 3rem;
-    max-width: 50rem;
-    color: $color-grey;
+  
+  .left-bottom-box {
+    margin: 1rem;
     transition: 500ms;
+    color: $color-grey;
+    max-width: 38rem;
+    border-radius: 8rem;
 
     &:hover {
       transition: 500ms;
       color: $color-contrast;
+      font-size: large;
+      opacity: 1;
+    }
+
+    // transition: background-color 1s linear 2s, color 1s;
+    // transition: property name | duration | timing function | delay
+
+    @media screen and (min-width: 40rem) {
+      opacity: .5;
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.5rem;
     }
   }
   

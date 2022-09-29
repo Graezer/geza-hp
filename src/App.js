@@ -1,5 +1,6 @@
 import './sass/App.scss'
 import NavBar from './components/NavBar.js'
+import Footer from './components/Footer.js'
 import AnimatedRoutes from './projects/AnimatedRoutes';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <NavBar />
       <AnimatedRoutes />
+      <Footer />
     </div>
   );
 }

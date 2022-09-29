@@ -49,8 +49,8 @@ function Info() {
                   </button>
                 </div>
                 <div className="dropdown-menu" id="dropdown-menu4" role="menu">
-                  <div class="dropdown-content">
-                    <div class="dropdown-item"></div><ul>
+                  <div className="dropdown-content">
+                    <div className="dropdown-item"></div><ul>
                       <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=2hM5viLMJpA' >host free react-app</a></li>
                       <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=2zXEMMEQLIw' >add font awesome</a></li>
                       <li><a className='App-link' rel="noreferrer" target='_blank' href='https://www.youtube.com/watch?v=I2UBjN5ER4s&t=4098s'>responsive website tutorial</a></li>

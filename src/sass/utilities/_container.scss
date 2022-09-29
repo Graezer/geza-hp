@@ -21,10 +21,15 @@
   margin-bottom: 2rem;
 }
 
+.relative {
+  position: relative;
+}
+
 .photo-description {
   position: absolute;
+  text-align: right;
   top: 3rem;
-  right: 1rem;
+  right: 1.5rem;
 
   p {
     font-size: 0.7rem;

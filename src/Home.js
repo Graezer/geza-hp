@@ -28,7 +28,7 @@ function Home() {
           </div>
         </div>
 
-        <div className='home-left-bottom-box'>
+        <div className='left-bottom-box'>
           <div className='is-flex is-align-items-center'>
             <div>
               <h1>Geza Steinert</h1>
